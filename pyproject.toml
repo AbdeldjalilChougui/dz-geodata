@@ -1,0 +1,16 @@
+[project]
+name = "dz-geodata-build"
+version = "0.1.0"
+requires-python = ">=3.13"
+dependencies = [
+    "shapely>=2.2.0",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+]
+
+[tool.pytest.ini_options]
+# packages/python has its own project and test suite
+testpaths = ["tests"]

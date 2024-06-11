@@ -1,0 +1,12 @@
+raw/
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+node_modules/
+dist/
+*.egg-info/
+.env
+.env.*
+packages/python/src/dz_geodata/data/
+packages/npm/data/
