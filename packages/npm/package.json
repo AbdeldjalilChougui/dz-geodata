@@ -1,0 +1,33 @@
+{
+  "name": "dz-geodata",
+  "version": "0.1.0",
+  "description": "Algeria's 69 wilayas, daïras and communes as GeoJSON/TopoJSON with Arabic/French/English names, ONS codes and lookup helpers.",
+  "license": "MIT AND ODbL-1.0",
+  "author": "Abdeldjalil Chougui",
+  "homepage": "https://github.com/AbdeldjalilChougui/dz-geodata#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AbdeldjalilChougui/dz-geodata.git",
+    "directory": "packages/npm"
+  },
+  "bugs": {
+    "url": "https://github.com/AbdeldjalilChougui/dz-geodata/issues"
+  },
+  "type": "module",
+  "main": "./index.js",
+  "types": "./index.d.ts",
+  "exports": {
+    ".": { "types": "./index.d.ts", "default": "./index.js" },
+    "./data/*": "./data/*",
+    "./package.json": "./package.json"
+  },
+  "files": ["index.js", "index.d.ts", "data", "README.md", "LICENSE", "DATA-LICENSE.md"],
+  "keywords": ["algeria", "algerie", "الجزائر", "wilaya", "commune", "daira", "geojson", "topojson", "boundaries", "administrative-boundaries", "openstreetmap"],
+  "engines": { "node": ">=18" },
+  "publishConfig": { "access": "public" },
+  "scripts": {
+    "sync-data": "cd ../.. && python3 scripts/sync_packages.py",
+    "prepack": "node -e \"require('node:fs').accessSync('data/wilayas.json')\" || (echo 'data/ missing: run pnpm sync-data' && exit 1)",
+    "test": "node --test test/"
+  }
+}
