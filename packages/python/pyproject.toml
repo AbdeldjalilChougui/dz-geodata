@@ -1,0 +1,40 @@
+[project]
+name = "dz-geodata"
+version = "0.1.0"
+description = "Algeria's 69 wilayas, daïras and communes as GeoJSON/TopoJSON with Arabic/French/English names, ONS codes and lookup helpers."
+readme = "README.md"
+license = "MIT AND ODbL-1.0"
+authors = [{ name = "Abdeldjalil Chougui" }]
+license-files = ["LICENSE", "DATA-LICENSE.md"]
+requires-python = ">=3.10"
+dependencies = []
+keywords = ["algeria", "algerie", "wilaya", "commune", "daira", "geojson", "topojson", "boundaries", "administrative boundaries", "openstreetmap"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "Natural Language :: Arabic",
+    "Natural Language :: French",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Scientific/Engineering :: GIS",
+]
+
+[project.urls]
+Homepage = "https://github.com/AbdeldjalilChougui/dz-geodata"
+Repository = "https://github.com/AbdeldjalilChougui/dz-geodata"
+Issues = "https://github.com/AbdeldjalilChougui/dz-geodata/issues"
+"Data license" = "https://opendatacommons.org/licenses/odbl/1-0/"
+
+[build-system]
+requires = ["uv_build>=0.11.32,<0.12.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = ["pytest>=8"]
