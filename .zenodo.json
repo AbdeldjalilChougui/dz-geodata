@@ -1,0 +1,27 @@
+{
+  "title": "dz-geodata: Algeria's administrative boundaries (wilayas, daïras, communes) as GeoJSON/TopoJSON",
+  "description": "<p>Algeria's administrative boundaries, 69 wilayas, 548 daïras and 1,538 communes, as GeoJSON and TopoJSON with Arabic, French and English names, ONS commune codes and the hierarchy between levels. Built reproducibly from OpenStreetMap, with npm and Python packages providing lookup, search and point-in-polygon helpers.</p><p>Licensing: the data files are derived from OpenStreetMap and licensed under the Open Database License (ODbL) 1.0, © OpenStreetMap contributors. The code (build scripts and packages) is licensed under the MIT License.</p>",
+  "upload_type": "dataset",
+  "creators": [
+    { "name": "Chougui, Abdeldjalil" }
+  ],
+  "license": "odbl-1.0",
+  "access_right": "open",
+  "keywords": [
+    "Algeria",
+    "administrative boundaries",
+    "GeoJSON",
+    "TopoJSON",
+    "wilaya",
+    "commune",
+    "OpenStreetMap"
+  ],
+  "notes": "Data: ODbL-1.0 (© OpenStreetMap contributors). Code: MIT.",
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/AbdeldjalilChougui/dz-geodata",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    }
+  ]
+}
