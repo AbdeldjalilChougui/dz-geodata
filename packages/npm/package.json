@@ -1,6 +1,6 @@
 {
   "name": "dz-geodata",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Algeria's 69 wilayas, daïras and communes as GeoJSON/TopoJSON with Arabic/French/English names, ONS codes and lookup helpers.",
   "license": "MIT AND ODbL-1.0",
   "author": "Abdeldjalil Chougui",
@@ -28,6 +28,6 @@
   "scripts": {
     "sync-data": "cd ../.. && python3 scripts/sync_packages.py",
     "prepack": "node -e \"require('node:fs').accessSync('data/wilayas.json')\" || (echo 'data/ missing: run pnpm sync-data' && exit 1)",
-    "test": "node --test test/"
+    "test": "node --test test/index.test.js"
   }
 }
