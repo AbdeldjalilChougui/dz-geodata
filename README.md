@@ -1,5 +1,7 @@
 # dz-geodata
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23458096.svg)](https://doi.org/10.5281/zenodo.23458096)
+
 Algeria's administrative boundaries, **69 wilayas → 548 daïras → 1,538
 communes**, as GeoJSON and TopoJSON with **Arabic, French and English
 names**, **ONS commune codes** and the hierarchy between levels. Everything is
